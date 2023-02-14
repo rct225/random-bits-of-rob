@@ -25,5 +25,6 @@ jobs:
         deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
         external_repository: rct225/rct225.github.io
         publish_branch: master  # default: gh-pages
+        publish_dir: ./_site
         destination_dir: blog
         keep_files: true
