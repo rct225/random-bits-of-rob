@@ -19,3 +19,10 @@ jobs:
     - uses: helaili/jekyll-action@v2    # Choose any one of the Jekyll Actions
       with:                                # Some relative inputs of your action
         token: ${{ secrets.GITHUB_TOKEN }}
+    - name: Deploy
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+        external_repository: rct225/rct225.github.io
+        publish_branch: master  # default: gh-pages
+        publish_dir: ./blog
