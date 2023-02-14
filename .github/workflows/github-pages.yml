@@ -26,3 +26,4 @@ jobs:
         external_repository: rct225/rct225.github.io
         publish_branch: master  # default: gh-pages
         publish_dir: ./blog
+        keep_files: true
