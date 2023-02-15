@@ -28,4 +28,3 @@ jobs:
         publish_branch: master  # default: gh-pages
         publish_dir: ./_site
         destination_dir: blog
-        keep_files: true
